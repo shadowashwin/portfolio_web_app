@@ -1,0 +1,104 @@
+#bg{
+    background-image: url("5652030 (1).jpg");
+    height: 10vh;
+}
+
+.navbar-light .navbar-brand {
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    font-style: oblique;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.navbar-light .nav .nav-link{
+    font-size: 15px;
+    color: rgb(166, 166, 166);
+}
+
+.navbar{
+    background-image: linear-gradient(to right, rgba(47, 79, 79, 0.345), rgba(0, 0, 0, 0.378));
+}
+
+.bg-dark{
+    background-image: linear-gradient(to right, rgb(47, 79, 79), rgb(0, 0, 0)) !important;
+}
+
+.bg-dark .hi{
+    margin-top: 300px;
+}
+
+.bg-dark .hi .me{
+    font-size: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.bg-dark .hi .me .f{
+    font-size: 40px;
+}
+
+.parent .container{
+    /* background-color: rgb(255, 0, 0); */
+    background-image: url("l.jpg");
+    height: 600px;
+    overflow: scroll;
+}
+
+.parent .card{
+    width: 90%;
+    max-width: 400px;
+    padding: 2rem 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid transparent;
+    backdrop-filter: blur(1rem);
+    box-shadow: 1.3rem 1.3rem 1.3rem rgba(0, 0, 0, 0.5);
+    border-top-color: rgba(225, 225, 225, 0.5);
+    border-left-color: rgba(225, 225, 225, 0.5);
+    border-right-color: rgba(225, 225, 225, 0.1);
+    border-bottom-color: rgba(225, 225, 225, 0.1);
+    color: white;
+    margin: 0px;
+
+}
+
+.parent .cb1{
+    background-color: rgba(225, 225, 225, 0.1);
+}
+
+.parent .body{
+    color: white;
+}
+
+.parent{
+    background-image: linear-gradient(oblique , white, grey);
+}
+
+.t{
+    /* margin-top: 50px; */
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+.resume{
+    
+}
+.f{
+    background-image: linear-gradient(to right, darkslategrey, black);
+}
+.c{
+    border-radius: 0.5rem;
+}
+
+.hover {
+    color: #0000;
+    background: 
+      linear-gradient(90deg,#1095c1 50%,#000 0) 
+      var(--_p,100%)/200% no-repeat;
+    -webkit-background-clip: text;
+            background-clip: text;
+    transition: .4s;
+  }
+  .hover:hover {
+    --_p: 0%;
+  }
+
