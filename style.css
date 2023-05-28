@@ -1,60 +1,251 @@
-#bg{
-    background-image: url("5652030 (1).jpg");
-    height: 10vh;
+.a {
+	background-attachment: fixed;
+	background: -moz-linear-gradient(
+	  45deg,
+	  #02e1ba 0%,
+	  #26c9f2 29%,
+	  #4375e2 66%,
+	  #d911f2 100%
+	);
+	background: -webkit-linear-gradient(
+	  45deg,
+	  #02e1ba 0%,
+	  #26c9f2 29%,
+	  #4375e2 66%,
+	  #d911f2 100%
+	);
+	background: linear-gradient(
+	  45deg,
+	  #02e1ba 0%,
+	  #26c9f2 29%,
+	  #4375e2 66%,
+	  #d911f2 100%
+	);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+	/*min-height: calc(100vh - 2rem);*/
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	justify-content: space-evenly;
+	overflow: hidden;
+	position: relative;
+  }
+  
+  .a::before,
+  .a::after {
+	content: "";
+	width: 70vmax;
+	height: 70vmax;
+	position: absolute;
+	background: rgba(255, 255, 255, 0.07);
+	left: -20vmin;
+	top: -20vmin;
+	animation: morph 15s linear infinite alternate, spin 20s linear infinite;
+	z-index: 1;
+	will-change: border-radius, transform;
+	transform-origin: 55% 55%;
+	pointer-events: none;
+  }
+  
+  .a::after {
+	width: 70vmin;
+	height: 70vmin;
+	left: auto;
+	right: -10vmin;
+	top: auto;
+	bottom: 0;
+	animation: morph 10s linear infinite alternate,
+	  spin 26s linear infinite reverse;
+	transform-origin: 20% 20%;
+  }
+  
+  @-webkit-keyframes Gradient {
+	0% {
+	  background-position: 0 50%;
+	}
+	50% {
+	  background-position: 100% 50%;
+	}
+	100% {
+	  background-position: 0 50%;
+	}
+  }
+  
+  @-moz-keyframes Gradient {
+	0% {
+	  background-position: 0 50%;
+	}
+	50% {
+	  background-position: 100% 50%;
+	}
+	100% {
+	  background-position: 0 50%;
+	}
+  }
+  
+  @keyframes Gradient {
+	0% {
+	  background-position: 0 50%;
+	}
+	50% {
+	  background-position: 100% 50%;
+	}
+	100% {
+	  background-position: 0 50%;
+	}
+  }
+  
+  @keyframes morph {
+	0% {
+	  border-radius: 40% 60% 60% 40% / 70% 30% 70% 30%;
+	}
+	100% {
+	  border-radius: 40% 60%;
+	}
+  }
+  
+  @keyframes spin {
+	to {
+	  transform: rotate(1turn);
+	}
+  }
+  .st0 {
+	display: none;
+  }
+  .st1 {
+	display: inline;
+  }
+  .st2 {
+	opacity: 0.29;
+  }
+  .st3 {
+	fill: #ffffff;
+  }
+  .st4 {
+	clip-path: url(#SVGID_2_);
+	fill: #ffffff;
+  }
+  .st5 {
+	clip-path: url(#SVGID_4_);
+  }
+  .st6 {
+	clip-path: url(#SVGID_6_);
+  }
+  .st7 {
+	clip-path: url(#SVGID_8_);
+  }
+  .st8 {
+	clip-path: url(#SVGID_10_);
+  }
+  .st9 {
+	fill: none;
+  }
+  .st10 {
+	clip-path: url(#SVGID_12_);
+  }
+  .st11 {
+	opacity: 0.7;
+  }
+  .st12 {
+	clip-path: url(#SVGID_14_);
+  }
+  .st13 {
+	opacity: 0.2;
+  }
+  .st14 {
+	clip-path: url(#SVGID_16_);
+  }
+  .st15 {
+	opacity: 0.3;
+	fill: #ffffff;
+	enable-background: new;
+  }
+  
+
+
+.gradient {
+	background: linear-gradient(334deg,rgba(2,0,36,1) 0%, rgba(9,9,121,1) 23%, rgba(0,212,255,1) 100%);
+	background-size: 180% 180%;
+	animation: gradient-animation 6s ease infinite;
 }
 
-.navbar-light .navbar-brand {
-    color: rgb(255, 255, 255);
-    font-size: 50px;
-    font-style: oblique;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+a {
+	text-decoration: none;
+	color: black;
+	margin-left: 1em;
+}
+a:hover {
+	text-decoration: underline;
+}
+a img.icon {
+	display: inline-block;
+	height: 1em;
+	margin: 0 0 -0.1em 0.3em;
 }
 
-.navbar-light .nav .nav-link{
-    font-size: 15px;
-    color: rgb(166, 166, 166);
+
+
+@keyframes gradient-animation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
-.navbar{
-    background-image: linear-gradient(to right, rgba(47, 79, 79, 0.345), rgba(0, 0, 0, 0.378));
+.apna_color {
+	color: hsl(58, 100%, 48%);
 }
 
-.bg-dark{
-    background-image: linear-gradient(to right, rgb(47, 79, 79), rgb(0, 0, 0)) !important;
+#mainNav a:hover {
+    color: hsl(222, 100%, 55%);
 }
 
-.bg-dark .hi{
-    margin-top: 300px;
+.nav-link:after {
+    content: "";
+    display: block;
+    height: 3px;
+    background: hsl(222, 95%, 49%);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
 }
 
-.bg-dark .hi .me{
-    font-size: 60px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.nav-link:hover:after {
+    color: hsl(222, 95%, 49%);
+    width: 100%;
 }
 
-.bg-dark .hi .me .f{
-    font-size: 40px;
+.textheading{
+	color: aliceblue;
+	font-family: 'Times New Roman', Times, serif;
+	text-decoration: solid;
+	font-size: 70px;
+}
+.text{
+	color: aliceblue;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 50px;
 }
 
-.parent .container{
-    /* background-color: rgb(255, 0, 0); */
-    background-image: url("l.jpg");
-    height: 600px;
-    overflow: scroll;
-}
 
 .parent .card{
-    width: 90%;
-    max-width: 400px;
-    padding: 2rem 1.5rem;
-    border-radius: 1rem;
+    border-radius: 1.5rem;
     border: 1px solid transparent;
-    backdrop-filter: blur(1rem);
+    backdrop-filter: blur(5rem);
     box-shadow: 1.3rem 1.3rem 1.3rem rgba(0, 0, 0, 0.5);
     border-top-color: rgba(225, 225, 225, 0.5);
     border-left-color: rgba(225, 225, 225, 0.5);
     border-right-color: rgba(225, 225, 225, 0.1);
     border-bottom-color: rgba(225, 225, 225, 0.1);
+    background-color: rgba(225, 225, 225, 0.1);
     color: white;
     margin: 0px;
 
@@ -63,42 +254,3 @@
 .parent .cb1{
     background-color: rgba(225, 225, 225, 0.1);
 }
-
-.parent .body{
-    color: white;
-}
-
-.parent{
-    background-image: linear-gradient(oblique , white, grey);
-}
-
-.t{
-    /* margin-top: 50px; */
-    color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding-top: 40px;
-    padding-bottom: 20px;
-}
-.resume{
-    
-}
-.f{
-    background-image: linear-gradient(to right, darkslategrey, black);
-}
-.c{
-    border-radius: 0.5rem;
-}
-
-.hover {
-    color: #0000;
-    background: 
-      linear-gradient(90deg,#1095c1 50%,#000 0) 
-      var(--_p,100%)/200% no-repeat;
-    -webkit-background-clip: text;
-            background-clip: text;
-    transition: .4s;
-  }
-  .hover:hover {
-    --_p: 0%;
-  }
-
