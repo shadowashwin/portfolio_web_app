@@ -201,6 +201,7 @@ a img.icon {
 	}
 }
 
+
 .apna_color {
 	color: hsl(58, 100%, 48%);
 }
@@ -236,21 +237,85 @@ a img.icon {
 }
 
 
+.row .col{
+    margin-top: 100px;
+}
+
 .parent .card{
-    border-radius: 1.5rem;
+
+    /* width: 100%; */
+    height: 400px;
+    padding: 1rem;
+    border-radius: 1rem;
     border: 1px solid transparent;
-    backdrop-filter: blur(5rem);
+    backdrop-filter: blur(1rem);
     box-shadow: 1.3rem 1.3rem 1.3rem rgba(0, 0, 0, 0.5);
     border-top-color: rgba(225, 225, 225, 0.5);
     border-left-color: rgba(225, 225, 225, 0.5);
     border-right-color: rgba(225, 225, 225, 0.1);
     border-bottom-color: rgba(225, 225, 225, 0.1);
-    background-color: rgba(225, 225, 225, 0.1);
-    color: white;
+    background-color: rgba(0, 0, 0, 0.137);
     margin: 0px;
-
+    transition: all 0.2s ease-in-out;
 }
 
-.parent .cb1{
-    background-color: rgba(225, 225, 225, 0.1);
+.parent .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+
+.parent .card-body {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+.parent.card-body h5 {
+    margin: 0 0 5px 0;
+    font-size: 18px;
+  }
+  
+.parent .card-body p {
+    margin: 0;
+    font-size: 12px;
+  }
+
+.section-head:after {
+	background: #ffffff;
+	content: "";
+	display: block;
+	width: 100px;
+	height: 3px;
+	margin: 20px auto;
+}
+
+
+#footer {
+	background-image: url("images/world_pattern.svg");
+	background-color: #ffffff;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+}
+
+
+.swiper {
+	width: 100%;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.swiper-slide {
+	background-position: center;
+	background-size: cover;
+	width: 300px;
+	height: 300px;
+}
+
+.swiper-slide img {
+	display: block;
+	width: 100%;
 }
